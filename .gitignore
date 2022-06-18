@@ -1,8 +1,14 @@
+# Ignore all hidden files
+.*
+
+# Do not exlude this hidden file
+!.gitignore
+
+# Mac related hidden files
+.DS_Store
+
 # Google Drive
 desktop.ini 
-
-# Mac
-.DS_Store
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
