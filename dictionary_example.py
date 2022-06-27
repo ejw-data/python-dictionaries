@@ -1,5 +1,3 @@
-import os
-
 
 votes = ['mo', 'mo', 'jessica', 'erin', 'jessica', 'mo', 'taylor']
 
