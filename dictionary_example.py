@@ -69,5 +69,28 @@ for vote in votes:
 print(election_results)
 
 
+# Refactoring Code 
+# .keys() is not actually needed
+for vote in votes:
+    
+    if vote in election_results:
+        election_results[vote] += 1
+    else:
+        election_results[vote] = 1
+
+print(election_results)
+
+
+# Alternate Way / Maybe Advanced Way - this is probably more python specific than general programming
+# there are times when using .get() can be helpful in handling issues when keys are not found but I don't think this is necessarily better.
+# to me this is less readable
+for vote in votes:
+
+    total = election_results.get(vote, 0) + 1
+    election_results[vote] = total
+
+print(election_results)
+
+
 
 
